@@ -805,24 +805,26 @@ textarea {
 .form-name {
   display: flex;
   flex-direction: column;
+  
 }
 
 .form-name input {
-  width: 248;
-  height: 65;
+  width: 448px;
+  height: 40px;
   margin: 0;
 }
 
 .form-name label {
-  margin-bottom: 4px;
  font-style: normal;
  font-weight: 400;
  font-size: 12px;
  line-height: 1.16;
  padding-top: 10px;
+ padding-bottom: 22px;
 letter-spacing: 0.01em;
 color: var(--title-text-color);
 }
+
 
 .btn-form {
   font-weight: 700;
@@ -853,12 +855,29 @@ color: var(--title-text-color);
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.icon-form {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  outline: 1px solid tomato;
+.icon-input { 
+position: absolute;
+transform:translateY(-50%)
+
 }
+
+.icon-form {
+position: relative;
+left: 15px;
+top: 50%;
+
+transform:translateY(-50%)
+
+}
+
+.comment {
+  width: 448px;
+  height: 120px;
+  margin: 0; 
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
 
 
 /* .form-name input {

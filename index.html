@@ -480,49 +480,56 @@
                   </li>
               </ul>
             </div>
+            <!--Footer Form Форма у футері-->
+            <form>
+              <p class="social-footer">Підпишіться на розсилку</p>
+              <input type="email" name="email" placeholder="E-mail">
+              <button type="submit">Підписатися</button>
+            </form>
         </div>    
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+
+    <!--Footer підвал сайту контактна інформація фірми-->
+     <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <p class="modal-paragraph"> Залиште свої дані, ми вам передзвонимо  </p>
               <form class="form" autocomplete="on">
                 <div class="form-name">
-                <label for="name" class="form-label">Ім'я</label>
-                  <span class="icon-form">
-                    <svg class="teame-social-icon" width="12" height="12">
-                        <use
+                  <label for="name" class="form-label">Ім'я</label>
+                  <div>
+                      <input class="icon-input" type="text" name="user-name" id="name" placeholder="" autofocus>
+                        <svg class="icon-form" width="12" height="12">
+                          <use
                           href="./images/icon/sprite.svg#icon-name"
-                        ></use>
-                      </svg>
-                  </span>
-                <input type="text" name="user-name" id="name" placeholder="" autofocus>
-                
+                          ></use>
+                        </svg>
+                   </div>
                 </div>
                 <div class="form-name">
                 <label for="tel">Телефон</label>
-                  <span class="icon-form">
-                    <svg class="teame-social-icon" width="13" height="13">
-                        <use
+                  <div>
+                     <input class="icon-input" type="tel" name="tel" id="tel" placeholder="">
+                      <svg class="icon-form" width="13" height="13">
+                           <use
                           href="./images/icon/sprite.svg#icon-phone"
-                        ></use>
-                      </svg>
-                  </span>
-                <input type="tel" name="tel" id="tel" placeholder="">
+                           ></use>
+                         </svg>
+                     </div>
                 </div>
                 <div class="form-name">
-                <label for="mail">Пошта</label>
-                <span class="icon-form">
-                 <svg class="teame-social-icon" width="12" height="15">
-                        <use
+                  <label for="mail">Пошта</label>
+                    <div>
+                     <input class="icon-input" type="email" name="mail" id="mail" placeholder="">
+                          <svg class="icon-form" width="12" height="15">
+                            <use
                           href="./images/icon/sprite.svg#icon-envelope"
-                        ></use>
-                      </svg>
-                  </span>
-                <input type="email" name="mail" id="mail" placeholder="">
+                            ></use>
+                         </svg>
+                    </div>
                 </div>
                 <div class="form-name">
                 <label for="comment">Коментара</label>
-                 <textarea name="comment" id="comment" placeholder="Введіть текс" cols="1" rows="6"></textarea>
+                 <textarea class="comment" name="comment" id="comment" placeholder="Введіть текс" cols="1" rows="6"></textarea>
                  </div>
                  <div class="checkbox">
                  <input type="checkbox" name="" value="" id="polici"/>
