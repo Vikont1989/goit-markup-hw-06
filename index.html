@@ -483,8 +483,13 @@
             <!--Footer Form Форма у футері-->
             <form>
               <p class="social-footer">Підпишіться на розсилку</p>
-              <input type="email" name="email" placeholder="E-mail">
-              <button type="submit">Підписатися</button>
+              <input class="footer-email" type="email" name="email" placeholder="E-mail">
+                 <button class="btn-telgram"        type="submit">Підписатися</button>
+                   <svg class="icon-telegram" width="24" height="24">
+                          <use
+                          href="./images/icon/sprite.svg#icon-icon-telegram"
+                          ></use>
+                        </svg>
             </form>
         </div>    
     </footer>
@@ -532,11 +537,12 @@
                  <textarea class="comment" name="comment" id="comment" placeholder="Введіть текс" cols="1" rows="6"></textarea>
                  </div>
                  <div class="checkbox">
-                 <input type="checkbox" name="" value="" id="polici"/>
-                 <label for="polici">Погоджуюся з розсилкою та приймаю <a>Умови договору</span>
+                 <input class="input-checkbox" type="checkbox" name="" value="" id="polici"/>
+                 </div>
+                 <label class="  " for="polici">Погоджуюся з розсилкою та приймаю <a>Умови договору</span>
                  
                 </label>
-                </div>
+                
                 
                 <button type="submit" class="btn-form">Відправити</button>
               </form>
