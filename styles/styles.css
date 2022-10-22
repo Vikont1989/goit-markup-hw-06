@@ -585,6 +585,10 @@ img {
   margin-bottom: 20px;
 }
 
+.social-form {
+  display: flex;
+}
+
 .icon-footer {
   width: 44px;
   height: 44px;
@@ -737,6 +741,11 @@ img {
 
 /* Footer Form Форма у футері */
 
+.social-footer {
+  display: flex;
+
+}
+
 .footer-email {
  width: 358px;
   height: 50px;
@@ -752,24 +761,22 @@ outline: none
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  background-color: var(--background-color-team);
-  color: var(--primart-text-color);
+  background-color: var(--accent-color);
+  color: var(--background-color);
   border-radius: 4px;
   padding: 10px 62px 10px 28px;
   border: none;
   cursor: pointer;
- 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn-telgram:hover,
-.btn-telgram:focus {
-  background-color: var(--accent-color);
-  color: var(--background-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+.icon-telegram {
+margin-left: 10px;
+  
+  /* transform: translateX(-48px); */
 }
 
 
@@ -796,11 +803,11 @@ outline: none
   height: 581px;
   width: 528px;
   background-color: var(--background-color);
-
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 40px;
 }
 
 .close-modal {
@@ -824,7 +831,7 @@ line-height: 1.15;
 text-align: center;
 letter-spacing: 0.03em;
 color:var(--primart-text-color);
-padding-top: 40px;
+margin-bottom: 12px;
 }
 
 textarea {
@@ -846,25 +853,43 @@ textarea {
   
 }
 
-.form-name input {
+ .form-name input {
   width: 448px;
   height: 40px;
   margin: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  outline: none
-  }
+  outline: none;
+  position: relative;
+  } 
+
+  
+
+.icon-input { 
+position: relative;
+margin-bottom: 10px;
+} 
+
+.icon-input:checked {
+   border-color: var(--accent-color)
+}
+
+.icon-form:checked {
+   border-color: var(--accent-color)
+}
+
 
 .form-name label {
  font-style: normal;
  font-weight: 400;
  font-size: 12px;
  line-height: 1.16;
- padding-top: 10px;
- padding-bottom: 22px;
 letter-spacing: 0.01em;
 color: var(--title-text-color);
+margin-bottom: 4px;
 }
+
+
 
 
 .btn-form {
@@ -872,65 +897,77 @@ color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  background-color: var(--background-color-team);
-  color: var(--primart-text-color);
+  background-color: var(--accent-color);
+  color: var(--background-color);
   border-radius: 4px;
   margin-top: 30px;
   border: none;
   cursor: pointer;
   padding: 10px 52px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.checkbox {
-  margin-top: 20px;
-}
-
-.btn-form:hover,
-.btn-form:focus {
-  background-color: var(--accent-color);
-  color: var(--background-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.icon-input { 
-position: absolute;
-transform:translateY(-50%)
-
+  margin: 0 auto;
+  display: block;
 }
 
 .icon-form {
-position: relative;
+position: absolute;
 left: 15px;
-top: 50%;
-
-transform:translateY(-50%)
-
+top:50%;
+transform: translateY(-50%);
 }
 
 .comment {
   width: 448px;
   height: 120px;
-  margin: 0; 
+  margin-bottom: 20px; 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none
 }
 
 .checkbox{
-  display: inline;
+  display: flex; 
 }
 
-.input-checkbox {
-  outline: 1px solid red;
+.contrac {
+  text-decoration: #2196f3;
+  text-underline-offset: 5px;
+}
+
+.checkbox{
+  display: flex; 
+}
+
+
+.label-checkbox {
+  padding-left: 35px;
+}
+
+.check-box {
+  position: absolute;
   width: 16px;
   height: 15px;
-  border-radius: 2px;
-  margin-right: 7px;
+    /* outline: 2px solid #212121;
+  border-radius:2px;   */
+  margin-left: -30px;
+    background-image: url(../images/icon/checkbox-frame.svg) ;
 }
+
+.input-checkbox:checked + .check-box {
+  background-image: url(../images/icon/checkbox-ok.svg);
+  background-color:var(--accent-color);
+  border-radius:2px;
+  background-repeat:no-repeat;
+}
+
+
+.input-checkbox {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
 
 /* .form-name input {
   color: var(--title-text-color);

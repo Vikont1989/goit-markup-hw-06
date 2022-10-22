@@ -483,13 +483,16 @@
             <!--Footer Form Форма у футері-->
             <form>
               <p class="social-footer">Підпишіться на розсилку</p>
-              <input class="footer-email" type="email" name="email" placeholder="E-mail">
-                 <button class="btn-telgram"        type="submit">Підписатися</button>
-                   <svg class="icon-telegram" width="24" height="24">
+              <div class="social-form">
+                     <input class="footer-email" type="email" name="email" placeholder="E-mail">
+                      <button class="btn-telgram"        type="submit">Підписатися  
+                          <svg class="icon-telegram" width="24" height="24">
                           <use
                           href="./images/icon/sprite.svg#icon-icon-telegram"
                           ></use>
-                        </svg>
+                  </svg>
+                </button>
+              </div>   
             </form>
         </div>    
     </footer>
@@ -501,7 +504,7 @@
               <form class="form" autocomplete="on">
                 <div class="form-name">
                   <label for="name" class="form-label">Ім'я</label>
-                  <div>
+                  <div class="icon-input">
                       <input class="icon-input" type="text" name="user-name" id="name" placeholder="" autofocus>
                         <svg class="icon-form" width="12" height="12">
                           <use
@@ -512,7 +515,7 @@
                 </div>
                 <div class="form-name">
                 <label for="tel">Телефон</label>
-                  <div>
+                  <div class="icon-input">
                      <input class="icon-input" type="tel" name="tel" id="tel" placeholder="">
                       <svg class="icon-form" width="13" height="13">
                            <use
@@ -523,7 +526,7 @@
                 </div>
                 <div class="form-name">
                   <label for="mail">Пошта</label>
-                    <div>
+                    <div class="icon-input">
                      <input class="icon-input" type="email" name="mail" id="mail" placeholder="">
                           <svg class="icon-form" width="12" height="15">
                             <use
@@ -536,13 +539,14 @@
                 <label for="comment">Коментара</label>
                  <textarea class="comment" name="comment" id="comment" placeholder="Введіть текс" cols="1" rows="6"></textarea>
                  </div>
-                 <div class="checkbox">
-                 <input class="input-checkbox" type="checkbox" name="" value="" id="polici"/>
-                 </div>
-                 <label class="  " for="polici">Погоджуюся з розсилкою та приймаю <a>Умови договору</span>
-                 
-                </label>
-                
+
+                <div class="checkbox">
+                   <label class="label-checkbox" for="polici">
+                    <input class="input-checkbox" type="checkbox" name="" value="" id="polici"/>
+                    <span class="check-box"></span>
+                    Погоджуюся з розсилкою та приймаю <a href="" class="contract">Умови договору</a>
+                   </label>
+               </div>
                 
                 <button type="submit" class="btn-form">Відправити</button>
               </form>
