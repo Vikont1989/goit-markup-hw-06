@@ -70,7 +70,7 @@ img {
 }
 
 .logo {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* шапка навігації */
@@ -201,7 +201,6 @@ img {
   padding-bottom: 94px;
 }
 
-
 .header-kontact {
   display: flex;
   margin-top: 0%;
@@ -327,7 +326,6 @@ img {
   background-position: center;
 }
 
-
 .caption {
   font-weight: 700;
   font-size: 14px;
@@ -427,7 +425,7 @@ img {
 
 .team-cards {
   padding: 30px 0;
-} 
+}
 
 .names {
   font-weight: 500;
@@ -477,7 +475,6 @@ img {
   background-color: var(--accent-color);
 }
 
-
 /* Список партнерських фірм */
 
 .clients {
@@ -526,7 +523,6 @@ img {
   fill: currentColor;
 }
 
-
 /* Footer підвал сайту контактна інформація фірми */
 
 .footer {
@@ -537,7 +533,7 @@ img {
 
 .footer > .container {
   display: flex;
-  align-items: baseline;         
+  align-items: baseline;
 }
 
 .footer-bloc {
@@ -550,10 +546,7 @@ img {
   display: block;
 }
 
-
-
-
-.adres {
+.footer-adres__link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -565,7 +558,8 @@ img {
   padding-left: 0px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact {
+
+.footer-contact__link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -576,8 +570,8 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.adres:hover,
-.adres:focus {
+.footer-adres__link:hover,
+.footer-adres__link:focus {
   color: var(--accent-color);
 }
 
@@ -590,17 +584,19 @@ img {
   margin-bottom: 9px;
 }
 
-.contact:hover,
-.contact:focus {
+.footer-contact__link:hover,
+.footer-contact__link:focus {
   color: var(--accent-color);
 }
 
-.container-icon {
+/* Блок на медіа посилання у футорі media link */
+
+.icon-container {
   margin-top: 12px;
   margin-right: auto;
 }
 
-.social-footer {
+.icon-container__title {
   color: var(--background-color);
   font-family: "Roboto";
   font-style: normal;
@@ -611,11 +607,14 @@ img {
   margin-bottom: 20px;
 }
 
-.social-form {
+.icon-container__nav {
   display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
 }
 
-.icon-footer {
+.icon-container__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -627,20 +626,79 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.teame-social-icon {
+.icon-container__svg {
   fill: currentColor;
 }
 
-.icon-footer:hover,
-.icon-footer:focus {
+.icon-container__link:hover,
+.icon-container__link:focus {
   color: var(--background-color);
   background-color: var(--accent-color);
 }
 
-/* оформлення сторінки портфоліо */
+/* Footer Form Форма у футері */
+
+.social__form {
+  display: flex;
+}
+
+.social__email {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+}
+
+.social__btn-telgram {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  border-radius: 4px;
+  padding: 10px 28px 10px 28px;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__icon-telegram {
+  margin-left: 10px;
+
+  /* transform: translateX(-48px); */
+}
+
+/*Список кнопок навігація по прикладам робіт оформлення сторінки портфоліо */
 
 /* оформлення кнопок навігації */
-.btn {
+
+.nav-porfolio__list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.nav-porfolio__items {
+  list-style: none;
+  box-sizing: border-box;
+  max-width: 270px;
+  margin-top: 0px;
+  gap: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.nav-porfolio__btn {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -656,31 +714,44 @@ img {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn:hover,
-.btn:focus {
+.nav-porfolio__btn:hover,
+.nav-porfolio__btn:focus {
   background-color: var(--accent-color);
   color: var(--background-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* оформлення галереї прикладів робіт */
+/* Фотокарточки !! Галерея прикладів робіт фірми */
 
-.items-shadow {
+.section-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.section-portfolio__items {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.section-portfolio__shadow  {
   display: block;
   text-decoration: none;
   color: var(--primart-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.items-shadow:hover,
-.items-shadow:focus {
+.section-portfolio__shadow:hover,
+.section-portfolio__shadow:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.items-shadow:hover .product-text-action,
-.items-shadow:focus .product-text-action {
+.section-portfolio__shadow:hover .product-text-action,
+.section-portfolio__shadow:focus .product-text-action {
   transform: translate(0);
   opacity: 1;
 }
@@ -697,7 +768,7 @@ img {
   padding: 61px 24px;
   height: 100%;
   width: 100%;
-  transition: transform 250ms cubic-bezier(0.1, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.1, 0, 0.2, 1);
   opacity: 250ms cubic-bezier(0.1, 0, 0.2, 1);
   background: rgba(33, 150, 243, 0.9);
   opacity: 0;
@@ -721,7 +792,12 @@ img {
   transform: translateY(0);
 }
 
-.firm {
+.company {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
+
+.company-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -729,7 +805,7 @@ img {
   margin-bottom: 0px;
 }
 
-.headline {
+.company-name__title {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
@@ -737,74 +813,8 @@ img {
   margin-top: 4px;
 }
 
-/* /* Поротфоліо * */
 
-.nav-porfolio {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.section-portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
-}
-
-.items-porfolio {
-  width: 370px;
-
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.portfolio {
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
-}
-
-/* Footer Form Форма у футері */
-
-.social-footer {
-  display: flex;
-}
-
-.footer-email {
-  width: 358px;
-  height: 50px;
-  margin-right: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  outline: none;
-}
-
-.btn-telgram {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-  background-color: var(--accent-color);
-  color: var(--background-color);
-  border-radius: 4px;
-  padding: 10px 28px 10px 28px;
-  border: none;
-  cursor: pointer;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon-telegram {
-  margin-left: 10px;
-
-  /* transform: translateX(-48px); */
-}
-
-/* модельне вікно */
+/*  Форма модельне вікно */
 
 .backdrop {
   position: fixed;
@@ -850,15 +860,15 @@ img {
 }
 
 .close-modal:focus,
-.close-modal:hover{
+.close-modal:hover {
   border-color: var(--accent-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
- .close-modal:hover svg {
+.close-modal:hover svg {
   fill: var(--accent-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} 
+}
 
 .modal-paragraph {
   font-weight: 700;
@@ -897,7 +907,7 @@ textarea {
 .icon-input {
   position: relative;
   margin-bottom: 10px;
-   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-input:focus + svg,
@@ -953,7 +963,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment:focus,
@@ -1013,4 +1023,3 @@ textarea {
   -moz-appearance: none;
   appearance: none;
 }
-

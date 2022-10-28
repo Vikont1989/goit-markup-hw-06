@@ -434,36 +434,39 @@
                 href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                class="adres"
+                class="footer-adres__link"
                 >м. Київ, пр-т Лесі Українки, 26</a
                >
                </li>
                <li class="items-footer">
-                <a href="milato:info@devstudio.com" class="contact"
+                <a href="milato:info@devstudio.com" class="footer-contact__link"
                 >info@devstudio.com</a
               >
               </li>
               <li class="items-footer">
-              <a href="tel:+380961111111" class="contact">+38 096 111 11 11</a>
+              <a href="tel:+380961111111" class="footer-contact__link">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
          </div>
-        <div class="container-icon">
-        <p class="social-footer">приєднуйтесь</p>
-          <ul class="team-cards__nav">
-               <li class="nav-media">
-                    <a class="icon-footer" href="#">
-                      <svg class="teame-social-icon" width="20" height="20">
+
+         <!--Блок на медіа посилання у футорі media link-->
+
+        <div class="icon-container">
+        <p class="icon-container__title">приєднуйтесь</p>
+          <ul class="icon-container__nav">
+               <li>
+                    <a class="icon-container__link" href="#">
+                      <svg class="icon-container__svg" width="20" height="20">
                         <use
                           href="./images/icon/sprite.svg#icon-instagram-2"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="nav-media">
-                    <a class="icon-footer" href="#">
-                      <svg class="teame-social-icon" width="20" height="20">
+                  <li>
+                    <a class="icon-container__link" href="#">
+                      <svg class="icon-container__svg" width="20" height="20">
                         <use
                           href="./images/icon/sprite.svg#icon-twitter-1"
                         ></use>
@@ -471,8 +474,8 @@
                     </a>
                   </li>
                   <li class="nav-media">
-                    <a class="icon-footer" href="#">
-                      <svg class="teame-social-icon" width="20" height="20">
+                    <a class="icon-container__link" href="#">
+                      <svg class="icon-container__svg" width="20" height="20">
                         <use
                           href="./images/icon/sprite.svg#icon-facebook-1"
                         ></use>
@@ -480,8 +483,8 @@
                     </a>
                   </li>
                   <li class="nav-media">
-                    <a class="icon-footer" href="#">
-                      <svg class="teame-social-icon" width="20" height="20">
+                    <a class="icon-container__link" href="#">
+                      <svg class="icon-container__svg" width="20" height="20">
                         <use
                           href="./images/icon/sprite.svg#icon-linkedin-1"
                         ></use>
@@ -490,13 +493,16 @@
                   </li>
               </ul>
             </div>
+
+
             <!--Footer Form Форма у футері-->
+
           <div>
-              <p class="social-footer">Підпишіться на розсилку</p>
-              <form class="social-form">
-                     <input class="footer-email" type="email" name="email" placeholder="E-mail">
-                          <button class="btn-telgram"         type="submit">Підписатися  
-                             <svg class="icon-telegram" width="24" height="24">
+              <p class="icon-container__title">Підпишіться на розсилку</p>
+              <form class="social__form">
+                     <input class="social__email" type="email" name="email" placeholder="E-mail">
+                          <button class="social__btn-telgram"         type="submit">Підписатися  
+                             <svg class="social__icon-telegram" width="24" height="24">
                                <use
                                href="./images/icon/sprite.svg#icon-icon-telegram"
                              ></use>
@@ -507,7 +513,8 @@
         </div>    
     </footer>
 
-    <!--Форма -->
+    <!-- Форма модельне вікно -->
+    
      <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <p class="modal-paragraph"> Залиште свої дані, ми вам передзвонимо  </p>
